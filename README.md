@@ -1,3 +1,4 @@
+[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=13164475&assignment_repo_type=AssignmentRepo)
 # Detecting Cycles in Graphs
 
 Kruskal's Algorithm adds edges to the minimum spanning tree, unless they would
@@ -14,3 +15,5 @@ exercises.
 
 What is the worst-case big $\Theta$ complexity of your implementation? Add your
 answer, including your reasoning, to this markdown file.
+
+In this implementation of detecting cycles a depth first search was used to go through the graph. The program vists each node which takes a constant time of O(1). The it iterates over the surrounding nodes of a node which takes O(|V|). Finally, the program goes through each edge once which take O(|E|). The worst case time complexity is O(|V|+|E|).
